@@ -1,0 +1,44 @@
+body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background: #2c3e50; color: #ecf0f1; }
+main, .profile-card { background-color: #ffffff; color: #333; }
+
+/* section/card shadows */
+main { box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+.profile-card { box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+nav ul { list-style: none; padding: 0; display: flex; margin: 0; }
+nav li { margin: 0 0.5rem; }
+nav a { color: #ecf0f1; text-decoration: none; padding: 0.5rem 1rem; transition: color 0.3s, background-color 0.3s; }
+nav a:hover { color: #bdc3c7; }
+nav a:active { color: #95a5a6; }
+
+nav a:hover { background-color: #5a67d8; }
+
+/* profile card on homepage */
+.profile-card { background-color: #ffffff; padding: 2.5rem 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); max-width: 650px; margin: auto; text-align: center; }
+.profile-card img { border: 5px solid black; transition: transform 0.3s; }
+.profile-card img:hover { transform: scale(1.05); }
+.profile-card h2 { font-size: 2.2rem; color: #333; letter-spacing: 1px; margin: 1rem 0 0.5rem; }
+.profile-card p { font-size: 1rem; color: #555; margin: 0.4rem 0; }
+.profile-card h3 { margin-top: 1.8rem; color: #667eea; }
+.profile-card .bio { text-align: justify; }
+
+/* header layout */
+header { display: flex; justify-content: space-between; align-items: center; background-color: #34495e; border-bottom: 1px solid #2c3e50; text-align: left; padding: 1rem 2rem; }
+.site-name { margin: 0; font-size: 1.5rem; color: #ecf0f1; }
+main { padding: 3rem; max-width: 900px; margin: auto; background-color: rgba(255, 255, 255, 0.95); border-radius: 10px; margin-top: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+img { max-width: 200px; border-radius: 50%; border: 5px solid #667eea; margin-bottom: 1rem; }
+h1, h2 { color: #333; }
+h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+h2 { font-size: 2rem; margin-top: 2rem; }
+p { line-height: 1.6; }
+footer { text-align: center; padding: 1.5rem; background-color: #333; color: white; margin-top: 2rem; }
+.social-links { display: flex; justify-content: center; gap: 1.5rem; margin-top: 1rem; }
+.social-links a { display: inline-block; transition: transform 0.3s, opacity 0.3s; }
+.social-links a:hover { transform: scale(1.1); opacity: 0.8; }
+.social-links img { width: 35px; height: 35px; }
+@media (max-width: 768px) {
+    nav ul { flex-direction: column; }
+    nav li { margin: 0; }
+    main { padding: 1rem; max-width: 100%; }
+    h1 { font-size: 2rem; }
+}
